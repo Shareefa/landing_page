@@ -63,14 +63,16 @@ h1{
     white-space: nowrap; /* Keeps the content on a single line */
      /* Gives that scrolling effect as the typing happens */
     /*letter-spacing: .15em; /* Adjust as needed */
-    animation:
-        typing 1.5s steps(18, end),
-        blink-caret .75s steps(10,end) ;
+    animation-name: typing;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+
 }
 
 @keyframes typing {
     from {width:0}
-    to {width:50%}
+    to {width:3.5em}
 
 }
 
@@ -86,7 +88,9 @@ h1{
     margin-left: 100px;
     margin-top: 0px;
     margin-bottom: 20px;
-    width: 50%
+    width:3.5em
+    /*float: left;*/
+    /*clear: both;*/
 }
 #first{
     margin-left: 100px;
